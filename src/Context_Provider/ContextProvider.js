@@ -13,7 +13,6 @@ export default function ContextProvider({children}){ // is function ko ek parent
     const[page, setPage] = useState(1);
     const[totalPages, setTotalPages] = useState(null);
     const navigate = useNavigate();
-
  
 async function fetchData(page = 1, tag, category){
     setLoader(true);
